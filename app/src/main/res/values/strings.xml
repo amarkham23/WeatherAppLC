@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="main_screen_greeting">Forecasts by Andrew</string>
+</resources>
