@@ -1,20 +1,15 @@
 package com.example.weatherapplc;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.squareup.picasso.Picasso;
@@ -24,7 +19,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -57,7 +51,7 @@ public class DetailActivity extends AppCompatActivity {
         dRecyclerView.setHasFixedSize(true);
 
 
-        iconSymbol=findViewById (R.id.detailIconView);
+        iconSymbol = findViewById(R.id.detailIconView);
         cityNameNew = findViewById(R.id.detailCity);
         detailCurrentTemp = findViewById(R.id.detailTemp);
 
@@ -81,14 +75,10 @@ public class DetailActivity extends AppCompatActivity {
 
         return;
 
-        }
+    }
 
 
-
-
-
-
-    private void ParseJSON(){
+    private void ParseJSON() {
 
         String cityName = getIntent().getStringExtra("Name");
 
@@ -111,7 +101,7 @@ public class DetailActivity extends AppCompatActivity {
 
                             int dTemperature = (int) dailyTemp;
 
-                            dItemList.add(new DailyItem(dailyConditions, dailyicon , decription, dTemperature, cityName));
+                            dItemList.add(new DailyItem(dailyConditions, dailyicon, decription, dTemperature, cityName));
 
                         }
 

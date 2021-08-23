@@ -8,7 +8,7 @@ public class DailyItem {
     private String mDate;
     private int mDailyTemp;
 
-    public DailyItem(String description, String iconURL, String date, int dailyTemp, String mCity){
+    public DailyItem(String description, String iconURL, String date, int dailyTemp, String mCity) {
         mDescription = description;
         mIconURL = iconURL;
         mDate = date;

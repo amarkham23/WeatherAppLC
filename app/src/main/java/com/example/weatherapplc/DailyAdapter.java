@@ -49,8 +49,6 @@ public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.myViewHolder
 
         Picasso.get().load("https://openweathermap.org/img/wn/" + dailySymbol + "@2x.png").fit().centerInside().into(holder.iv_dailySymbol);
 
-
-
     }
 
     @Override

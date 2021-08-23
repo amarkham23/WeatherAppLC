@@ -54,7 +54,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(mContext, DetailActivity.class);
+                Intent intent = new Intent(mContext, DetailActivity.class);
                 intent.putExtra("CityID", cityKey);
                 intent.putExtra("Name", cityName);
                 intent.putExtra("icon", imageUrl);
@@ -67,7 +67,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
         })
 
         ;
-
 
 
     }
@@ -85,7 +84,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
         public ImageView mCurrentWeatherIcon;
 
 
-
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
             mCurrentWeatherIcon = itemView.findViewById(R.id.condition_symbol);
@@ -96,5 +94,5 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
 
         }
 
-}
+    }
 }

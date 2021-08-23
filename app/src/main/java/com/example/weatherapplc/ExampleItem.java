@@ -44,21 +44,33 @@ public class ExampleItem implements Parcelable {
         }
     };
 
-    public String getmCity(){
+    public String getmCity() {
         return mCity;
     }
+
     public double getmTemp() {
-        return  mTemp;
+        return mTemp;
     }
-    public double getmLat() {return mLat;}
-    public double getmLon() {return mLon;}
-    public String getmCondition(){
+
+    public double getmLat() {
+        return mLat;
+    }
+
+    public double getmLon() {
+        return mLon;
+    }
+
+    public String getmCondition() {
         return mCondition;
     }
+
     public String getmImageUrl() {
         return mImageUrl;
     }
-    public Integer getmCityKey() {return mCityKey; }
+
+    public Integer getmCityKey() {
+        return mCityKey;
+    }
 
     @Override
     public int describeContents() {
